@@ -163,4 +163,3 @@ This is a personal portfolio site. All rights reserved.
 ---
 
 Built with ❤️ using React and Foundation CSS
-
