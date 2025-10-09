@@ -87,15 +87,6 @@ function FundManager() {
           </div>
         </div>
 
-        {/* Banner */}
-        <div className="contactparent">
-          <div className="left-section">
-            <i className="fa fa-eye-slash" aria-hidden="true" style={{ paddingRight: '8px', fontSize: '20px' }}></i>
-          </div>
-          <div className="right-section">
-            <p><strong>Due to nondisclosure agreements, I can't share more about this project online, but <a href="mailto:wes@jonesco.com" className="contactlink">contact me</a>, and we can talk in person.</strong></p>
-          </div>
-        </div>
 
         <hr />
 
