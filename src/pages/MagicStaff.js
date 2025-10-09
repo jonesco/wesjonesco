@@ -17,7 +17,7 @@ function MagicStaff() {
       <div>
         <h4>
           <img className="floaterleft" src="/images/work/mscap.png" alt="mscap" style={{ boxShadow: '0px 0px 5px rgba(0, 0, 0, 0.2)', borderRadius: '10px', width: '60px', height: '60px', marginRight: '16px', marginTop: '8px' }} />
-          Designed as a proof of concept and completed within just one month, this developer staffing solution is tailored for global teams. Harnessing Google OR Tools and integrating smoothly with existing third-party frameworks, the system boasts an efficient and user-friendly interface. It simplifies the management of diverse staffing scenarios across the globe, offering a set of detailed, weighted results that consider a variety of factors. The solution's adaptive nature provides the necessary flexibility and nuance to cater to the diverse and dynamic staffing needs of teams spread worldwide, demonstrating rapid innovation and effective problem-solving in global team management.
+          Built in just one month as a proof of concept, MagicStaff is a developer staffing solution designed for global teams. It uses Google OR Tools under the hood and connects seamlessly with third-party frameworks, making it both efficient and easy to use. The platform helps teams handle complex staffing needs worldwide by generating detailed, weighted results that account for multiple factors. Its flexibility allows it to adapt to the constantly changing demands of distributed teams, showing how quickly and effectively thoughtful design can solve challenges in global team management.
         </h4>
 
         <hr />
