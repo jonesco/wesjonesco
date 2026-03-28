@@ -1,0 +1,213 @@
+
+
+body {background-image: url("images/work/CS1.png")}
+
+
+.top-bar, .top-bar ul {background-color: white; margin-bottom: 20px;
+}
+
+#header {background-color: white; color: black; padding-top: 0px; padding-bottom: 20px; 
+}
+
+#cstile {background-color: white;  padding-top: 10px; margin-bottom: 10px;
+}
+
+
+
+
+#processtile {margin-bottom: 30px;}
+
+hr {margin-top: 40px; margin-bottom: 40px;}
+
+ul.a {
+  list-style-type: circle;
+}
+
+hr {
+  border: 1px dashed; color: gainsboro;;
+}
+
+#rcorners1 {
+  border-radius: 10px;
+  background: black;
+  color: white;
+  padding: 10px; 
+  font-family: monospace;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/*#nda {
+  border-radius: 10px;
+  background: white;
+  padding: 10px; 
+  border: 1px solid black;
+  display: flex;
+  align-items: center; /* Vertically aligns children to the middle */
+  justify-content: center; /* Optional: horizontally centers children */
+}
+
+#nda.fa {font-size: 30px;}*/
+
+mark {background-color: yellow;
+}
+
+a {color: dodgerblue;
+}
+
+a:hover {color: dodgerblue;
+}
+
+.TradeGothicLTPro-Cn18 { 
+  font-family: TradeGothicLTPro-Cn18;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.TradeGothicLTPro-Cn18 { 
+      font-family: TradeGothicLTPro-Cn18;
+      font-weight: normal;
+      font-style: normal;}
+      p {line-height: 120%
+}
+
+
+.hint {font-family: monospace; font-size: 10px;}
+
+
+.largehint {font-size: 14px; padding-right: 24px:}
+
+div.largehint {font-size: 14px; padding-right: 24px:}
+
+
+
+.tile {padding: 10px; background-color: black; height: 160px; border-radius: 10px; color: white; margin-bottom: 20px; touch-action: manipulation;
+}
+
+.tile:hover {padding: 10px; background-color: dodgerblue; height: 160px; border-radius: 10px; color: white; margin-bottom: 20px;
+}
+
+/*.tile:active {padding: 10px; background-color: darkblue; height: 160px; border-radius: 10px; color: white; margin-bottom: 20px;
+}*/
+
+.soontile {padding: 10px; background-color: black;  border-radius: 10px; color: black; margin-bottom: 20px;
+}
+
+.soontile p {margin-bottom: 0px; color: white;
+}
+
+.tile.touchable {
+    background-color: black;
+    /* Other styling for the touchable state */
+}
+
+.csid p {color: white; font-family: monospace; font-size: 12px;}
+
+
+h3, .h3 {
+
+    line-height: 1.0; padding-bottom: 8px;}
+
+h1, .h1 {
+
+    line-height: 1;
+}
+
+@media print, screen and (min-width: 40em) {
+    h1, .h1 {
+        font-size: 2.7rem; /* Adjust the value to make the text smaller */
+        padding-bottom: 8px;
+    }
+    h2, .strong {
+        line-height: 2.5rem; 
+        padding-bottom: 8px;
+    }    
+}
+
+.top-bar, .top-bar ul {
+    background-color: white;
+    margin-bottom: 8px;
+}
+
+#icon
+     {margin-bottom: 10px;}"
+
+.circleimg {
+  text-align: center;
+}
+
+li.special-item {
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+.shadowed-div {
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+.contactlink {color: white; text-decoration: underline;}
+
+
+.contactparent {
+    display: flex;
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    margin-top: 36px;
+}
+
+.contactparent p {margin-bottom: 0px; color: white;
+}
+
+.contactparent i {color: orangered;
+}
+
+.left-section {
+    /* Adjust the width of the left section based on the icon size */
+}
+
+.right-section {
+    flex-grow: 1; /* The right section takes up the remaining space */
+    padding: 0px; /* Add padding for better styling */
+    box-sizing: border-box; /* Include padding and border in the total width */
+}
+
+
+.floaterleft {float: left;}
+
+.floaterright {float: right;}
+
+.next {
+  background-color:whitesmoke;
+      border-radius: 10px;
+      padding-top: 16px;
+      padding-bottom: 8px;
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem;
+      margin-bottom: 40px;
+}
+
+.next:hover {
+  background-color: whitesmoke;
+  outline: 2px solid dodgerblue;
+}
+
+.contactarea {
+  background-color: #f5f5f5;
+      border-radius: 10px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      padding-right: 24px;
+      padding-left: 24px;
+      margin-bottom: 40px;
+      margin-top: 24px;
+      font-size: 16px;
+}
+
+ .contactarea i {
+        font-size: 1.1em; color: black; margin-right: 8px; width: 20px; text-align: center;
+
+.contacts {
+  background-color: transparent !important;
+}
