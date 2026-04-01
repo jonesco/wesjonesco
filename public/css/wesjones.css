@@ -1,90 +1,250 @@
-
+/* ===========================
+   BASE
+   =========================== */
 
 body {
-  background-image: url("images/work/CS1.png");
   font-family: 'Libre Franklin', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-
-.top-bar, .top-bar ul {background-color: white; margin-bottom: 20px;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-.section-header {background-color: white; color: black; padding-top: 0px; padding-bottom: 20px;
-}
+a { color: #2563eb; }
+a:hover { color: #1d4ed8; }
 
-#cstile {background-color: white;  padding-top: 10px; margin-bottom: 10px;
-}
+p { line-height: 120%; }
 
-
-
-
-.processtile {margin-bottom: 30px;}
-
-.processtile p {font-size: 1.125rem;}
-
-hr {margin-top: 40px; margin-bottom: 40px;}
-
-ul.a {
-  list-style-type: circle;
-}
+mark { background-color: yellow; }
 
 hr {
-  border: 1px dashed; color: gainsboro;;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: 1px dashed;
+  color: gainsboro;
 }
 
-#rcorners1 {
-  border-radius: 10px;
-  background: black;
-  color: white;
-  padding: 10px; 
-  font-family: monospace;
-  margin-bottom: 20px;
-  font-size: 14px;
+ul.a { list-style-type: circle; }
+
+li.special-item {
+  line-height: 1.2;
+  margin-bottom: 16px;
 }
 
-/*#nda {
-  border-radius: 10px;
-  background: white;
-  padding: 10px; 
-  border: 1px solid black;
+
+/* ===========================
+   LAYOUT
+   =========================== */
+
+.page {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.cols-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.cols-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.cols-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.cols-6 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+.cols-auto {
   display: flex;
-  align-items: center; /* Vertically aligns children to the middle */
-  justify-content: center; /* Optional: horizontally centers children */
+  gap: 1rem;
+}
+.cols-auto > * {
+  flex: 1;
+  min-width: 0;
 }
 
-#nda.fa {font-size: 30px;}*/
-
-mark {background-color: yellow;
+.cols-2-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
 }
 
-a {color: #2563eb;
+.cols-1-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5rem;
 }
 
-a:hover {color: #1d4ed8;
+.cols-1-3 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1.5rem;
 }
 
-.TradeGothicLTPro-Cn18 { 
+.tile-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* Show/hide by breakpoint */
+.large-only { display: none; }
+.large-hidden { display: block; }
+
+@media (min-width: 1024px) {
+  .large-only { display: block; }
+  .large-hidden { display: none; }
+}
+
+/* Responsive grid breakdowns */
+@media (max-width: 900px) {
+  .cols-3,
+  .cols-4,
+  .tile-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cols-6 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .dark-band {
+    margin-top: 16px;
+    margin-bottom: 60px;
+    padding-top: 32px;
+  }
+  .section-header {
+    padding-bottom: 32px;
+  }
+  .tile-image {
+    height: 300px;
+  }
+  .cols-2,
+  .cols-3,
+  .cols-4,
+  .cols-6,
+  .cols-2-1,
+  .cols-1-2,
+  .cols-1-3 {
+    grid-template-columns: 1fr;
+  }
+  .tile-grid {
+    grid-template-columns: 1fr;
+  }
+  .cols-auto {
+    flex-wrap: wrap;
+  }
+}
+
+
+/* ===========================
+   NAVIGATION
+   =========================== */
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 8px;
+  background-color: white;
+}
+
+.site-logo {
+  display: block;
+  padding: 0;
+}
+
+.back-link {
+  padding-bottom: 20px;
+}
+
+
+/* ===========================
+   TYPOGRAPHY
+   =========================== */
+
+h1, .h1 { line-height: 1; }
+
+h3, .h3 { line-height: 1.0; padding-bottom: 8px; }
+
+h4 { font-size: 24px; font-weight: 400; line-height: 1.5; }
+
+h5 { font-size: 1.17rem; font-weight: 700; }
+
+@media (min-width: 640px) {
+  h1, .h1 {
+    font-size: 2.7rem;
+    padding-bottom: 8px;
+  }
+  h2 {
+    line-height: 2.5rem;
+    padding-bottom: 8px;
+  }
+}
+
+.bio-text {
+  font-size: 2rem;
+  line-height: 1.4;
+  padding-bottom: 8px;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 640px) {
+  .bio-text {
+    font-size: 18px;
+  }
+  .bio h2 { font-size: 133%; }
+}
+
+.hint { font-family: monospace; font-size: 10px; }
+
+.largehint { font-size: 14px; padding-right: 24px; }
+
+.section-header {
+  color: black;
+  padding-top: 0;
+  padding-bottom: 48px;
+}
+
+.section-header h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+@media (max-width: 640px) {
+  .section-header h1 {
+    font-size: 22px;
+  }
+}
+
+.TradeGothicLTPro-Cn18 {
   font-family: TradeGothicLTPro-Cn18;
   font-weight: normal;
   font-style: normal;
 }
 
-.TradeGothicLTPro-Cn18 { 
-      font-family: TradeGothicLTPro-Cn18;
-      font-weight: normal;
-      font-style: normal;}
-      p {line-height: 120%
-}
 
-
-.hint {font-family: monospace; font-size: 10px;}
-
-
-.largehint {font-size: 14px; padding-right: 24px;}
-
-div.largehint {font-size: 14px; padding-right: 24px;}
-
-
+/* ===========================
+   CASE STUDY TILES
+   =========================== */
 
 .tile-card {
   margin-bottom: 40px;
@@ -120,126 +280,104 @@ div.largehint {font-size: 14px; padding-right: 24px;}
   background-color: black;
 }
 
-.tile-label {
-  padding: 4px 2px;
-}
+.tile-grid a { text-decoration: none; }
+
+.tile-label { padding: 4px 2px; }
 
 .tile-label h2 {
   color: black;
+  margin-top: 0;
   margin-bottom: 0;
   line-height: 1.2;
   font-size: 24px;
 }
 
-/*.tile:active {padding: 10px; background-color: darkblue; height: 160px; border-radius: 10px; color: white; margin-bottom: 20px;
-}*/
+.csid p { color: #999; font-family: monospace; font-size: 12px; margin-bottom: 4px; }
 
-.soontile {padding: 10px; background-color: black;  border-radius: 10px; color: black; margin-bottom: 20px;
+.soontile {
+  padding: 10px;
+  background-color: black;
+  border-radius: 10px;
+  color: black;
+  margin-bottom: 20px;
 }
 
-.soontile p {margin-bottom: 0px; color: white;
+.soontile p { margin-bottom: 0; color: white; }
+
+
+/* ===========================
+   SKILLS / PROCESS
+   =========================== */
+
+.processtile { margin-bottom: 30px; }
+.processtile p { font-size: 1.125rem; margin-top: 0; }
+.processtile p:first-child { margin-top: 0; }
+
+.icon-cell {
+  flex-shrink: 0;
+  width: clamp(48px, 5vw, 250px);
+  margin-bottom: 10px;
 }
 
-.tile.touchable {
-    background-color: black;
-    /* Other styling for the touchable state */
+.icon-cell img {
+  width: 100%;
+  height: auto;
 }
 
-.csid p {color: #999; font-family: monospace; font-size: 12px; margin-bottom: 4px;}
-
-
-.bio-text {
-  font-size: 1.9375rem;
-  line-height: 1.4;
-  padding-bottom: 8px;
-  margin-bottom: 1rem;
+.dark-band .icon-cell img {
+  filter: brightness(0) invert(1);
 }
 
-h3, .h3 {
-    line-height: 1.0; padding-bottom: 8px;}
-
-h1, .h1 {
-    line-height: 1;
+.skill-row {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
 }
 
-@media screen and (max-width: 39.9375em) {
-  .bio-text {
-    font-size: 1.58rem;
-  }
+.skill-icon {
+  width: 48px;
+  flex-shrink: 0;
 }
 
-@media print, screen and (min-width: 40em) {
-    h1, .h1 {
-        font-size: 2.7rem; /* Adjust the value to make the text smaller */
-        padding-bottom: 8px;
-    }
-    h2, .strong {
-        line-height: 2.5rem; 
-        padding-bottom: 8px;
-    }    
+
+/* ===========================
+   CASE STUDY PAGES
+   =========================== */
+
+#rcorners1 {
+  border-radius: 10px;
+  background: black;
+  color: white;
+  padding: 10px;
+  font-family: monospace;
+  margin-bottom: 20px;
+  font-size: 14px;
+  display: inline-block;
 }
-
-.top-bar, .top-bar ul {
-    background-color: white;
-    margin-bottom: 8px;
-}
-
-.icon-cell {margin-bottom: 10px;}
-
-.circleimg {
-  text-align: center;
-}
-
-li.special-item {
-      line-height: 1.2;
-      margin-bottom: 16px;
-    }
 
 .shadowed-div {
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    }
-
-.contactlink {color: white; text-decoration: underline;}
-
-
-.contactparent {
-    display: flex;
-    padding: 10px;
-    background-color: black;
-    border-radius: 10px;
-    color: white;
-    margin-top: 36px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.contactparent p {margin-bottom: 0px; color: white;
-}
+.floaterleft { float: left; }
+.floaterright { float: right; }
 
-.contactparent i {color: #2563eb;
-}
+.circleimg { text-align: center; }
 
-.left-section {
-    /* Adjust the width of the left section based on the icon size */
-}
-
-.right-section {
-    flex-grow: 1; /* The right section takes up the remaining space */
-    padding: 0px; /* Add padding for better styling */
-    box-sizing: border-box; /* Include padding and border in the total width */
-}
+.indented { padding-left: 2rem; }
+.indented p { margin-bottom: 1.5rem; }
 
 
-.floaterleft {float: left;}
-
-.floaterright {float: right;}
+/* ===========================
+   NEXT CASE STUDY
+   =========================== */
 
 .next {
-  background-color:whitesmoke;
-      border-radius: 10px;
-      padding-top: 16px;
-      padding-bottom: 8px;
-      padding-right: 0.9375rem;
-      padding-left: 0.9375rem;
-      margin-bottom: 40px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 16px 1.25rem 8px;
+  margin-bottom: 40px;
 }
 
 .next:hover {
@@ -247,25 +385,54 @@ li.special-item {
   outline: 2px solid #2563eb;
 }
 
+
+/* ===========================
+   CONTACT
+   =========================== */
+
 .contactarea {
   background-color: #f5f5f5;
-      border-radius: 10px;
-      padding-top: 24px;
-      padding-bottom: 24px;
-      padding-right: 24px;
-      padding-left: 24px;
-      margin-bottom: 40px;
-      margin-top: 24px;
-      font-size: 16px;
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 40px;
+  margin-top: 24px;
+  font-size: 16px;
 }
 
 .contactarea i {
-  font-size: 1.1em; color: black; margin-right: 8px; width: 20px; text-align: center;
+  font-size: 1.1em;
+  color: black;
+  margin-right: 8px;
+  width: 20px;
+  text-align: center;
 }
 
-.contacts {
-  background-color: transparent !important;
+.contacts { background-color: transparent !important; }
+
+.contactlink { color: white; text-decoration: underline; }
+
+.contactparent {
+  display: flex;
+  padding: 10px;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  margin-top: 36px;
 }
+
+.contactparent p { margin-bottom: 0; color: white; }
+.contactparent i { color: #2563eb; }
+
+.right-section {
+  flex-grow: 1;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* ===========================
+   DARK BAND
+   =========================== */
 
 .dark-band {
   background-color: #1a1a1a;
@@ -273,7 +440,7 @@ li.special-item {
   position: relative;
   left: 50%;
   margin-left: -50vw;
-  padding-top: 48px;
+  padding-top: 32px;
   padding-bottom: 48px;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -281,17 +448,8 @@ li.special-item {
 
 .dark-band-inner {
   max-width: 75rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
-}
-
-@media print, screen and (min-width: 64em) {
-  .dark-band-inner {
-    padding-left: 0;
-    padding-right: 0;
-  }
+  margin: 0 auto;
+  padding: 0 1.25rem;
 }
 
 .dark-band h1,
@@ -307,30 +465,12 @@ li.special-item {
   color: white;
 }
 
-.section-header h1 {
-  font-size: 1.35rem;
-}
+.dark-band .tile-label h2 { color: white; }
 
-.dark-band .tile-label h2 {
-  color: white;
-}
+.dark-band .contactarea { background-color: #2a2a2a; }
 
-.dark-band .contactarea {
-  background-color: #2a2a2a;
-}
+.dark-band .contactarea a { color: #93c5fd; }
+.dark-band .contactarea a:hover { color: white; }
+.dark-band .contactarea i { color: #93c5fd; }
 
-.dark-band .contactarea a {
-  color: #93c5fd;
-}
-
-.dark-band .contactarea a:hover {
-  color: white;
-}
-
-.dark-band .contactarea i {
-  color: #93c5fd;
-}
-
-.dark-band:last-child {
-  margin-bottom: 0;
-}
+.dark-band:last-child { margin-bottom: 0; }
