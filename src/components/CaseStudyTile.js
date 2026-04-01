@@ -1,22 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function CaseStudyTile({ title, caseId, link, className = "bgimg" }) {
+function CaseStudyTile({ title, caseId, link, image }) {
   return (
-    <div className="large-4 medium-6 small-6 cell">
+    <div className="large-4 medium-6 small-12 cell">
       <Link to={link}>
-        <div className={`tile ${className}`}>
-          <div className="csid">
-            <p>#{caseId}</p>
+        <div className="tile-card">
+          <div className="tile-image">
+            {image
+              ? <img src={image} alt={title} />
+              : <div className="tile-image-placeholder" />
+            }
           </div>
-          <p>
-            <strong className="show-for-small-only">
-              <h1>{title}</h1>
-            </strong>
-            <strong className="hide-for-small-only">
-              <h3><strong>{title}</strong></h3>
-            </strong>
-          </p>
+          <div className="tile-label">
+            <div className="csid"><p>#{caseId}</p></div>
+            <h2><strong>{title}</strong></h2>
+          </div>
         </div>
       </Link>
     </div>
@@ -24,4 +23,3 @@ function CaseStudyTile({ title, caseId, link, className = "bgimg" }) {
 }
 
 export default CaseStudyTile;
-
