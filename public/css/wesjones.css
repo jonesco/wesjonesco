@@ -165,7 +165,7 @@ li.special-item {
   align-items: center;
   justify-content: space-between;
   padding: 0;
-  margin-bottom: 8px;
+  margin-bottom: 24px;
   background-color: transparent;
 }
 
@@ -177,6 +177,7 @@ li.special-item {
 
 .back-link {
   padding-bottom: 20px;
+  margin-bottom: 16px;
   display: block;
   text-align: left;
   align-self: flex-start;
