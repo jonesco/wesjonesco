@@ -206,7 +206,7 @@ h5 { font-size: 1.17rem; font-weight: 700; }
 
 @media (max-width: 640px) {
   .bio-text {
-    font-size: 18px;
+    font-size: 20px;
   }
   .bio h2 { font-size: 133%; }
 }
