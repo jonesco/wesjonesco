@@ -161,7 +161,7 @@ li.special-item {
   justify-content: space-between;
   padding: 0;
   margin-bottom: 8px;
-  background-color: white;
+  background-color: transparent;
 }
 
 .site-logo {
