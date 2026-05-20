@@ -61,12 +61,12 @@ function Home() {
       </div>
 
       <div className="tile-grid">
-        <CaseStudyTile title="Fund Manager Workspace" caseId="5487" link="/fund-manager" image="/images/work/f0.png" />
-        <CaseStudyTile title="Netspend Pattern Library" caseId="4324" link="/ns_pattern_library" image="/images/work/NSPL1.png" />
-        <CaseStudyTile title="Custom Debit Card Creator" caseId="5214" link="/custom_card_creator" image="/images/work/cc1.png" />
-        <CaseStudyTile title="Wayblazer Search Engine" caseId="2597" link="/wayblazer" image="/images/work/wayblazer_home1.png" />
-        <CaseStudyTile title="MagicStaff POC" caseId="1259" link="/magicstaff" image="/images/work/ms0.png" />
-        <CaseStudyTile title="CPay Sales Assistant Workshop" caseId="2214" link="/cpay" image="/images/work/cpay_proto1.png" />
+        <CaseStudyTile title="Fund Manager Workspace" caseId="5487" link="/fund-manager" image="/images/work/f0.png" description="One platform to replace them all — built for one of the world's top investment banks managing $11 trillion in assets." />
+        <CaseStudyTile title="Netspend Pattern Library" caseId="4324" link="/ns_pattern_library" image="/images/work/nspl-thumb.png" description="A living design system that keeps teams moving fast and products looking consistent across the Netspend ecosystem." />
+        <CaseStudyTile title="Custom Debit Card Creator" caseId="5214" link="/custom_card_creator" image="/images/work/cc-thumb.png" description="A simple, fun way for customers to personalize their card — and a reason to pull it out more often." />
+        <CaseStudyTile title="Wayblazer Search Engine" caseId="2597" link="/wayblazer" image="/images/work/wayblazer_home1.png" description="Smart travel search that reads between the lines, using AI to predict what kind of trip you're planning before you know yourself." />
+        <CaseStudyTile title="MagicStaff POC" caseId="1259" link="/magicstaff" image="/images/work/ms-thumb.png" description="Staffing optimization that handles the complexity of global teams so managers can focus on the work that matters." />
+        <CaseStudyTile title="CPay Sales Assistant Workshop" caseId="2214" link="/cpay" image="/images/work/cpay-thumb.png" description="Four days, one sprint, one prototype — helping a sales team go from scattered tools to a single assistant they actually want to use." />
       </div>
 
       {/* Contact */}
