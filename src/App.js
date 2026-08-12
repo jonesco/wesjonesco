@@ -9,6 +9,8 @@ import MagicStaff from './pages/MagicStaff';
 import CPay from './pages/CPay';
 import SpotMe from './pages/SpotMe';
 import Wellsmith from './pages/Wellsmith';
+import FlatbedPrivacy from './pages/FlatbedPrivacy';
+import FlatbedSupport from './pages/FlatbedSupport';
 
 function App() {
   const location = useLocation();
@@ -29,9 +31,10 @@ function App() {
       <Route path="/cpay" element={<CPay />} />
       <Route path="/spotme" element={<SpotMe />} />
       <Route path="/wellsmith" element={<Wellsmith />} />
+      <Route path="/flatbed-privacy" element={<FlatbedPrivacy />} />
+      <Route path="/flatbed-support" element={<FlatbedSupport />} />
     </Routes>
   );
 }
 
 export default App;
-
